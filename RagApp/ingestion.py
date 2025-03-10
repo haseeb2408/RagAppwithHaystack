@@ -9,3 +9,9 @@ import os
 from dotenv import load_dotenv
 
 
+def get_result(query):
+        pass
+
+
+if __name__ == '__main__':
+        get_result()
