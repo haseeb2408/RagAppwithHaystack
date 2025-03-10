@@ -17,8 +17,9 @@ templates = Jinja2Templates(directory='templates')
 async def index(request : Request):
     return templates.TemplateResponse("index.html" , {"request" : request})
 
-# @app.post("/post_answer")
-
+@app.post("/post_answer")
+async def get_answer(request : Request , questions : str=Form(...)):
+    pass    
 
 if __name__ == '__main':
     uvicorn.run(app)
